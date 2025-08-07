@@ -3,8 +3,7 @@
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/effect-fade';
+import 'swiper/css/bundle';
 
 import camelsImage from '@/../public/home/camels.jpg';
 import balconyImage from '@/../public/home/balcony.jpg';
@@ -17,15 +16,16 @@ export default function HomeSlider() {
   return (
     <Swiper
       allowTouchMove={false}
-      spaceBetween={30}
       effect={'fade'}
+      fadeEffect={{
+        crossFade: true
+      }}
       autoplay={{
-        delay: 5000,
-        disableOnInteraction: false
+        delay: 5000
       }}
       speed={1000}
       modules={[EffectFade, Autoplay]}
-      className='-z-10 size-full'
+      className='size-full bg-zinc-900'
     >
       <SwiperSlide>
         <Image src={balconyImage} alt='Balcony' fill style={{ objectFit: 'cover' }} />
@@ -40,7 +40,7 @@ export default function HomeSlider() {
         <Image src={chaletImage} alt='Chalet' fill style={{ objectFit: 'cover' }} />
       </SwiperSlide>
       <SwiperSlide>
-        <Image src={garlicImage} alt='Carlic' fill style={{ objectFit: 'cover' }} />
+        <Image src={garlicImage} alt='Garlic' fill style={{ objectFit: 'cover' }} />
       </SwiperSlide>
       <SwiperSlide>
         <Image src={skyImage} alt='Sky' fill style={{ objectFit: 'cover' }} />
