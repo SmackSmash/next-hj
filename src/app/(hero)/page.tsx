@@ -40,8 +40,8 @@ export default function Home() {
             </div>
           </div>
           <div className='flex gap-4'>
-            <SiFacebook className='size-7 opacity-90 hover:opacity-100' />
-            <SiInstagram className='size-7 opacity-90 hover:opacity-100' />
+            <SiFacebook className='size-7 fill-white opacity-90 hover:opacity-100' />
+            <SiInstagram className='size-7 fill-white opacity-90 hover:opacity-100' />
           </div>
         </div>
       </div>
