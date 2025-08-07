@@ -14,9 +14,9 @@ export default function Home() {
           <Image src={logoSVG} alt='Harrison Jack Photography Logo' className='w-40 invert' />
           <div className='max-w-fit'>
             <div className='mb-4 border-b-1 pb-4 text-6xl leading-17 font-semibold text-zinc-50 text-shadow-sm'>
-              How We
+              How we
               <br />
-              See Things
+              see things
             </div>
             <div className='flex justify-between'>
               <Link
