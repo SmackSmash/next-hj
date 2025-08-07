@@ -13,7 +13,7 @@ export default function Home() {
         <div className='flex h-full flex-col justify-between'>
           <Image src={logoSVG} alt='Harrison Jack Photography Logo' className='w-40 invert' />
           <div className='max-w-fit'>
-            <div className='mb-8 text-7xl leading-20 font-semibold text-white'>
+            <div className='mb-8 text-7xl leading-20 font-semibold text-white text-shadow-sm'>
               How We
               <br />
               See Things
@@ -26,13 +26,13 @@ export default function Home() {
                 About
               </Link>
               <Link
-                href=''
+                href='/folios'
                 className='grow bg-white py-1 text-center tracking-wider text-black uppercase opacity-90 hover:opacity-100'
               >
                 Folios
               </Link>
               <Link
-                href=''
+                href='contact'
                 className='grow bg-white py-1 text-center tracking-wider text-black uppercase opacity-90 hover:opacity-100'
               >
                 Contact

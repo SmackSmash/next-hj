@@ -27,10 +27,13 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div className='p-4 font-sans'>
+        <div className='p-20 font-sans'>
           <NavBar />
           {children}
         </div>
+        <footer className='text-center text-sm italic'>
+          Copyright © Harrison Jack Photography {new Date().getFullYear()}
+        </footer>
       </body>
     </html>
   );
