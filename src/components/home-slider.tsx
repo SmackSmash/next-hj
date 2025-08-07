@@ -34,13 +34,13 @@ export default function HomeSlider() {
         <Image src={camelsImage} alt='Camels' fill style={{ objectFit: 'cover' }} />
       </SwiperSlide>
       <SwiperSlide>
+        <Image src={lampshadesImage} alt='Lampshades' fill style={{ objectFit: 'cover' }} />
+      </SwiperSlide>
+      <SwiperSlide>
         <Image src={chaletImage} alt='Chalet' fill style={{ objectFit: 'cover' }} />
       </SwiperSlide>
       <SwiperSlide>
         <Image src={garlicImage} alt='Carlic' fill style={{ objectFit: 'cover' }} />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image src={lampshadesImage} alt='Lampshades' fill style={{ objectFit: 'cover' }} />
       </SwiperSlide>
       <SwiperSlide>
         <Image src={skyImage} alt='Sky' fill style={{ objectFit: 'cover' }} />
