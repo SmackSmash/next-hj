@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import { FiFacebook } from 'react-icons/fi';
+import { FiInstagram } from 'react-icons/fi';
 import logoSVG from '@/../public/logo.svg';
 import HomeSlider from '@/components/home-slider';
 
@@ -15,7 +17,10 @@ export default function Home() {
           <br />
           BOLLOCKS
         </div>
-        <div>Socials</div>
+        <div className='flex gap-4'>
+          <FiFacebook className='size-8' />
+          <FiInstagram className='size-8' />
+        </div>
       </div>
     </div>
   );
