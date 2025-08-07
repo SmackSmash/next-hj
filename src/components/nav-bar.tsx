@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import { SiFacebook } from 'react-icons/si';
 import { SiInstagram } from 'react-icons/si';
 import logoSVG from '@/../public/logo.svg';
+import ModeSwitch from './mode-switch';
 
 export default function NavBar() {
   const pathname = usePathname();
@@ -39,6 +40,7 @@ export default function NavBar() {
       <Link href='' className='opacity-90 hover:opacity-100'>
         <SiInstagram className='size-5' />
       </Link>
+      <ModeSwitch />
     </nav>
   );
 }

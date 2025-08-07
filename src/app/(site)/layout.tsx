@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import { Providers } from '@/components/providers';
 import NavBar from '@/components/nav-bar';
 import '@/app/globals.css';
 
@@ -25,15 +26,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html lang='en' suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div className='p-20 font-sans'>
-          <NavBar />
-          {children}
-        </div>
-        <footer className='text-center text-sm italic'>
-          Copyright © Harrison Jack Photography {new Date().getFullYear()}
-        </footer>
+        <Providers>
+          <div className='bg-zinc-100 p-20 font-sans dark:bg-zinc-900'>
+            <NavBar />
+            {children}
+            <footer className='text-center text-sm italic'>
+              Copyright © Harrison Jack Photography {new Date().getFullYear()}
+            </footer>
+          </div>
+        </Providers>
       </body>
     </html>
   );

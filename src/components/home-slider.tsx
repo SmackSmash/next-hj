@@ -28,10 +28,10 @@ export default function HomeSlider() {
       className='-z-10 size-full'
     >
       <SwiperSlide>
-        <Image src={camelsImage} alt='Camels' fill style={{ objectFit: 'cover' }} />
+        <Image src={balconyImage} alt='Balcony' fill style={{ objectFit: 'cover' }} />
       </SwiperSlide>
       <SwiperSlide>
-        <Image src={balconyImage} alt='Balcony' fill style={{ objectFit: 'cover' }} />
+        <Image src={camelsImage} alt='Camels' fill style={{ objectFit: 'cover' }} />
       </SwiperSlide>
       <SwiperSlide>
         <Image src={chaletImage} alt='Chalet' fill style={{ objectFit: 'cover' }} />
