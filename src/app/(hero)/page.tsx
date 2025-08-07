@@ -13,7 +13,7 @@ export default function Home() {
         <div className='flex h-full flex-col justify-between'>
           <Image src={logoSVG} alt='Harrison Jack Photography Logo' className='w-40 invert' />
           <div className='max-w-fit'>
-            <div className='mb-4 border-b-1 border-zinc-50 pb-4 text-6xl leading-17 font-semibold text-zinc-50 text-shadow-sm'>
+            <div className='mb-4 border-b-10 border-zinc-50 pb-4 text-6xl leading-17 font-semibold text-zinc-50 text-shadow-sm'>
               How we
               <br />
               see things
