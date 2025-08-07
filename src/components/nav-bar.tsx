@@ -18,27 +18,21 @@ export default function NavBar() {
       </Link>
       <Link
         href='/about'
-        className={`pb-2 [&.active]:border-b-1 ${pathname === '/about' ? 'active' : ''}`}
+        className={`border-zinc-800 pb-2 dark:border-zinc-100 [&.active]:border-b-2 ${pathname === '/about' ? 'active' : ''}`}
       >
         About
       </Link>
       <Link
         href='/folios'
-        className={`pb-2 [&.active]:border-b-1 ${pathname === '/folios' ? 'active' : ''}`}
+        className={`border-zinc-800 pb-2 dark:border-zinc-100 [&.active]:border-b-2 ${pathname === '/folios' ? 'active' : ''}`}
       >
         Folios
       </Link>
       <Link
         href='/contact'
-        className={`pb-2 [&.active]:border-b-1 ${pathname === '/contact' ? 'active' : ''}`}
+        className={`border-zinc-800 pb-2 dark:border-zinc-100 [&.active]:border-b-2 ${pathname === '/contact' ? 'active' : ''}`}
       >
         Contact
-      </Link>
-      <Link href='' className='ml-auto opacity-90 hover:opacity-100'>
-        <SiFacebook className='size-5' />
-      </Link>
-      <Link href='' className='opacity-90 hover:opacity-100'>
-        <SiInstagram className='size-5' />
       </Link>
       <ModeSwitch />
     </nav>
