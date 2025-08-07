@@ -20,7 +20,7 @@ export default function Home() {
             </div>
             <div className='flex gap-4'>
               <Link
-                href=''
+                href='/about'
                 className='grow bg-white py-1 text-center tracking-wider text-black uppercase opacity-90 hover:opacity-100'
               >
                 About
