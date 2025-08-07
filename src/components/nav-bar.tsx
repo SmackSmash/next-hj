@@ -12,7 +12,7 @@ export default function NavBar() {
   const pathname = usePathname();
 
   return (
-    <nav className='flex items-start gap-4'>
+    <nav className='mb-12 flex items-start gap-4'>
       <Link href='/'>
         <Image src={logoSVG} alt='Harrison Jack Logo' className='mr-4 w-40 dark:invert' />
       </Link>

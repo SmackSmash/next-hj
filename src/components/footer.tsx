@@ -3,7 +3,7 @@ import { SiFacebook, SiInstagram } from 'react-icons/si';
 
 export default function Footer() {
   return (
-    <footer className='mt-auto flex flex-col items-center text-center text-sm italic'>
+    <footer className='mt-auto flex flex-col items-center pt-16 text-center text-sm italic'>
       <div className='mb-4 flex gap-4'>
         <Link
           href='https://www.facebook.com/harrisonjack.05'
