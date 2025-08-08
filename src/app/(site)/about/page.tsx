@@ -27,7 +27,7 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
-      <ul className='container mx-auto mt-20 text-center text-2xl text-zinc-400 italic'>
+      <ul className='container mx-auto mt-20 text-center text-2xl text-zinc-400 italic dark:text-zinc-600'>
         <li className='inline-block px-2'>Argos</li>
         <li className='inline-block px-2'>Berghaus </li>
         <li className='inline-block px-2'>Barbour </li>
