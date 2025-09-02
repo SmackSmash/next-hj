@@ -13,7 +13,7 @@ export default function Home() {
         <div className='flex h-full flex-col justify-between'>
           <Image src={logoSVG} alt='Harrison Jack Photography Logo' className='w-40 invert' />
           <div className='max-w-fit'>
-            <div className='mb-4 border-b-1 border-zinc-50 pb-4 text-6xl leading-17 font-semibold text-zinc-50 text-shadow-sm'>
+            <div className='mb-4 border-b-1 border-zinc-50 pb-4 text-5xl leading-13 font-semibold text-zinc-50 text-shadow-sm'>
               How we
               <br />
               see things
@@ -21,19 +21,19 @@ export default function Home() {
             <div className='flex justify-between'>
               <Link
                 href='/about'
-                className='py-1 text-center text-lg tracking-wider text-zinc-50 opacity-90 shadow-sm hover:opacity-100'
+                className='py-1 text-center text-lg tracking-wider text-zinc-50 opacity-90 text-shadow-sm hover:opacity-100'
               >
                 About
               </Link>
               <Link
                 href='/folios'
-                className='py-1 text-center text-lg tracking-wider text-zinc-50 opacity-90 shadow-sm hover:opacity-100'
+                className='py-1 text-center text-lg tracking-wider text-zinc-50 opacity-90 text-shadow-sm hover:opacity-100'
               >
                 Folios
               </Link>
               <Link
                 href='contact'
-                className='py-1 text-center text-lg tracking-wider text-zinc-50 opacity-90 shadow-sm hover:opacity-100'
+                className='py-1 text-center text-lg tracking-wider text-zinc-50 opacity-90 text-shadow-sm hover:opacity-100'
               >
                 Contact
               </Link>
