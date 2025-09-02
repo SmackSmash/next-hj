@@ -3,20 +3,19 @@
 import nodemailer from 'nodemailer';
 
 const transporter = nodemailer.createTransport({
-  host: 'smtp.ethereal.email',
-  port: 587,
-  secure: false, // true for 465, false for other ports
+  host: process.env.SMTP_SERVER_HOST,
+  port: 465,
+  secure: true, // true for 465, false for other ports
   auth: {
-    user: 'maddison53@ethereal.email',
-    pass: 'jn7jnAPss4f63QBp6D'
+    user: process.env.SMTP_SERVER_USER,
+    pass: process.env.SMTP_SERVER_PASSWORD
   }
 });
 
-// Wrap in an async IIFE so we can use await.
 export default async function sendMail() {
   const info = await transporter.sendMail({
-    from: '"Maddison Foo Koch" <maddison53@ethereal.email>',
-    to: 'bar@example.com, baz@example.com',
+    from: process.env.SMTP_SERVER_USER,
+    to: process.env.SMTP_SERVER_TARGET,
     subject: 'Hello ✔',
     text: 'Hello world?', // plain‑text body
     html: '<b>Hello world?</b>' // HTML body
