@@ -8,7 +8,7 @@ export default function ContactForm() {
   const {
     register,
     handleSubmit,
-    formState: { errors }
+    formState: { errors, isSubmitting, isSubmitSuccessful }
   } = useForm();
 
   return (
@@ -18,15 +18,32 @@ export default function ContactForm() {
     >
       <div className='flex items-center gap-2'>
         <label htmlFor='name'>Name</label>
-        <input type='text' name='name' id='name' className='bg-zinc-100 p-2 text-zinc-950' />
+        <input
+          {...register('name')}
+          type='text'
+          name='name'
+          id='name'
+          className='bg-zinc-100 p-2 text-zinc-950'
+        />
       </div>
       <div className='flex items-center gap-2'>
         <label htmlFor='email'>Email</label>
-        <input type='text' name='email' id='email' className='bg-zinc-100 p-2 text-zinc-950' />
+        <input
+          {...register('email')}
+          type='email'
+          name='email'
+          id='email'
+          className='bg-zinc-100 p-2 text-zinc-950'
+        />
       </div>
       <div className='flex items-center gap-2'>
         <label htmlFor='message'>Message</label>
-        <textarea name='message' id='message' className='bg-zinc-100 p-2 text-zinc-950' />
+        <textarea
+          {...register('message')}
+          name='message'
+          id='message'
+          className='bg-zinc-100 p-2 text-zinc-950'
+        />
       </div>
       <button type='submit' className='width-full bg-zinc-100 p-2 text-zinc-900'>
         Send
