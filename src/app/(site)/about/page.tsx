@@ -6,7 +6,7 @@ export default function AboutPage() {
     <>
       <div className='flex items-start justify-center'>
         <div className='mr-20 pt-12'>
-          <div className='mb-4 max-w-fit border-b-1 border-zinc-900 pb-4 text-6xl leading-17 font-semibold text-zinc-900 dark:border-zinc-50 dark:text-zinc-50'>
+          <div className='mb-4 max-w-fit border-b-1 border-zinc-900 pb-4 text-5xl leading-17 font-semibold text-zinc-900 dark:border-zinc-50 dark:text-zinc-50'>
             Who
             <br />
             we are

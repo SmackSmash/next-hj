@@ -23,7 +23,7 @@ export default function ContactForm() {
           type='text'
           name='name'
           id='name'
-          className='bg-zinc-100 p-2 text-zinc-950'
+          className='border border-zinc-50 p-2 outline-0 focus:border-2'
         />
       </div>
       <div className='flex items-center gap-2'>
@@ -33,19 +33,21 @@ export default function ContactForm() {
           type='email'
           name='email'
           id='email'
-          className='bg-zinc-100 p-2 text-zinc-950'
+          className='border border-zinc-50 p-2 outline-0 focus:border-2'
         />
       </div>
-      <div className='flex items-center gap-2'>
-        <label htmlFor='message'>Message</label>
+      <div className='flex gap-2'>
+        <label htmlFor='message' className='pt-2'>
+          Message
+        </label>
         <textarea
           {...register('message')}
           name='message'
           id='message'
-          className='bg-zinc-100 p-2 text-zinc-950'
+          className='border border-zinc-50 p-2 outline-0 focus:border-2'
         />
       </div>
-      <button type='submit' className='width-full bg-zinc-100 p-2 text-zinc-900'>
+      <button type='submit' className='width-full bg-zinc-200 p-2 text-zinc-900'>
         Send
       </button>
     </form>
