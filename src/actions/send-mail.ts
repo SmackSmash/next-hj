@@ -16,7 +16,7 @@ export default async function sendMail() {
   const info = await transporter.sendMail({
     from: process.env.SMTP_SERVER_USER,
     to: process.env.SMTP_SERVER_TARGET,
-    subject: 'Hello ✔',
+    subject: 'Hello Again',
     text: 'Hello world?', // plain‑text body
     html: '<b>Hello world?</b>' // HTML body
   });
