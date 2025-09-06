@@ -11,6 +11,7 @@ export default function ContactForm() {
     formState: { errors, isSubmitting, isSubmitSuccessful }
   } = useForm();
 
+  console.log(errors);
   const onSubmit = async (data: FieldValues) => {
     await new Promise(res => setTimeout(res, 1000));
     console.log(data);
@@ -26,6 +27,7 @@ export default function ContactForm() {
         id='name'
         className='border border-zinc-300 p-2 outline-0 focus:border-zinc-600 dark:border-zinc-600 focus:dark:border-zinc-400'
       />
+      {errors.name && <p>{`${errors.name.message}`}</p>}
       <label htmlFor='email' className='mt-2'>
         Email
       </label>
@@ -36,6 +38,7 @@ export default function ContactForm() {
         id='email'
         className='border border-zinc-300 p-2 outline-0 focus:border-zinc-600 dark:border-zinc-600 focus:dark:border-zinc-400'
       />
+      {errors.email && <p>{`${errors.email.message}`}</p>}
       <label htmlFor='message' className='mt-2'>
         Message
       </label>
@@ -45,6 +48,7 @@ export default function ContactForm() {
         id='message'
         className='border border-zinc-300 p-2 outline-0 focus:border-zinc-600 dark:border-zinc-600 focus:dark:border-zinc-400'
       />
+      {errors.message && <p>{`${errors.message.message}`}</p>}
       <button
         disabled={isSubmitting}
         type='submit'
