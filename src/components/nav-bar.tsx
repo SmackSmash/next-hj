@@ -3,8 +3,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { SiFacebook } from 'react-icons/si';
-import { SiInstagram } from 'react-icons/si';
 import logoSVG from '@/../public/logo.svg';
 import ModeSwitch from './mode-switch';
 

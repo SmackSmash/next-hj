@@ -17,7 +17,7 @@ export default function ContactForm() {
     console.log(data);
   };
 
-  if (isSubmitSuccessful) return <p>We'll be in touch soon!</p>;
+  if (isSubmitSuccessful) return <p>We&aposll be in touch soon!</p>;
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-2'>
