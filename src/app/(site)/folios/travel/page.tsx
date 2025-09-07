@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import GalleryImage from '@/components/gallery-image';
 import Image01 from '@/../public/travel/01.webp';
 import Image02 from '@/../public/travel/02.webp';
 import Image03 from '@/../public/travel/03.webp';
@@ -52,34 +53,34 @@ export default function FoliosPage() {
   return (
     <div className='flex gap-5'>
       <div className='flex flex-col items-center gap-5'>
-        <Image src={Image01} alt='Image 1' className='max-h-screen w-fit' />
-        <Image src={Image02} alt='Image 2' className='max-h-screen w-fit' />
-        <Image src={Image03} alt='Image 3' className='max-h-screen w-fit' />
-        <Image src={Image04} alt='Image 4' className='max-h-screen w-fit' />
-        <Image src={Image05} alt='Image 5' className='max-h-screen w-fit' />
-        <Image src={Image06} alt='Image 6' className='max-h-screen w-fit' />
-        <Image src={Image07} alt='Image 7' className='max-h-screen w-fit' />
-        <Image src={Image08} alt='Image 8' className='max-h-screen w-fit' />
-        <Image src={Image09} alt='Image 9' className='max-h-screen w-fit' />
-        <Image src={Image10} alt='Image 10' className='max-h-screen w-fit' />
-        <Image src={Image11} alt='Image 11' className='max-h-screen w-fit' />
-        <Image src={Image12} alt='Image 12' className='max-h-screen w-fit' />
-        <Image src={Image13} alt='Image 13' className='max-h-screen w-fit' />
+        <GalleryImage src={Image01} alt='Image 1' />
+        <GalleryImage src={Image02} alt='Image 2' />
+        <GalleryImage src={Image03} alt='Image 3' />
+        <GalleryImage src={Image04} alt='Image 4' />
+        <GalleryImage src={Image05} alt='Image 5' />
+        <GalleryImage src={Image06} alt='Image 6' />
+        <GalleryImage src={Image07} alt='Image 7' />
+        <GalleryImage src={Image08} alt='Image 8' />
+        <GalleryImage src={Image09} alt='Image 9' />
+        <GalleryImage src={Image10} alt='Image 10' />
+        <GalleryImage src={Image11} alt='Image 11' />
+        <GalleryImage src={Image12} alt='Image 12' />
+        <GalleryImage src={Image13} alt='Image 13' />
       </div>
       <div className='flex flex-col items-center gap-5'>
-        <Image src={Image14} alt='Image 1' className='max-h-screen w-fit' />
-        <Image src={Image15} alt='Image 2' className='max-h-screen w-fit' />
-        <Image src={Image16} alt='Image 3' className='max-h-screen w-fit' />
-        <Image src={Image17} alt='Image 4' className='max-h-screen w-fit' />
-        <Image src={Image18} alt='Image 5' className='max-h-screen w-fit' />
-        <Image src={Image19} alt='Image 6' className='max-h-screen w-fit' />
-        <Image src={Image20} alt='Image 7' className='max-h-screen w-fit' />
-        <Image src={Image21} alt='Image 8' className='max-h-screen w-fit' />
-        <Image src={Image22} alt='Image 9' className='max-h-screen w-fit' />
-        <Image src={Image23} alt='Image 10' className='max-h-screen w-fit' />
-        <Image src={Image24} alt='Image 11' className='max-h-screen w-fit' />
-        <Image src={Image25} alt='Image 12' className='max-h-screen w-fit' />
-        <Image src={Image26} alt='Image 13' className='max-h-screen w-fit' />
+        <GalleryImage src={Image14} alt='Image 1' />
+        <GalleryImage src={Image15} alt='Image 2' />
+        <GalleryImage src={Image16} alt='Image 3' />
+        <GalleryImage src={Image17} alt='Image 4' />
+        <GalleryImage src={Image18} alt='Image 5' />
+        <GalleryImage src={Image19} alt='Image 6' />
+        <GalleryImage src={Image20} alt='Image 7' />
+        <GalleryImage src={Image21} alt='Image 8' />
+        <GalleryImage src={Image22} alt='Image 9' />
+        <GalleryImage src={Image23} alt='Image 10' />
+        <GalleryImage src={Image24} alt='Image 11' />
+        <GalleryImage src={Image25} alt='Image 12' />
+        <GalleryImage src={Image26} alt='Image 13' />
       </div>
     </div>
   );
