@@ -21,9 +21,9 @@ export default function HomeSlider() {
         crossFade: true
       }}
       autoplay={{
-        delay: 5000
+        delay: 3000
       }}
-      speed={1000}
+      speed={2000}
       modules={[EffectFade, Autoplay]}
       className='size-full bg-zinc-900'
     >

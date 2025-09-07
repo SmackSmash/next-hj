@@ -11,7 +11,6 @@ export default function ContactForm() {
     formState: { errors, isSubmitting, isSubmitSuccessful }
   } = useForm();
 
-  console.log(errors);
   const onSubmit = async (data: FieldValues) => {
     await new Promise(res => setTimeout(res, 1000));
     console.log(data);
