@@ -49,67 +49,37 @@ import Image47 from '@/../public/travel/47.webp';
 import Image48 from '@/../public/travel/48.webp';
 
 export default function FoliosPage() {
-  const images1 = [
-    Image01,
-    Image02,
-    Image03,
-    Image04,
-    Image05,
-    Image06,
-    Image07,
-    Image08,
-    Image09,
-    Image10,
-    Image11,
-    Image12,
-    Image13
-  ];
-
-  const images2 = [
-    Image14,
-    Image15,
-    Image16,
-    Image17,
-    Image18,
-    Image19,
-    Image20,
-    Image21,
-    Image22,
-    Image23,
-    Image24,
-    Image25,
-    Image26
-  ];
-
   return (
-    <div className='flex flex-col gap-10 md:flex-row'>
-      <div className='flex w-full flex-col items-center gap-10 md:w-1/2'>
-        {images1.map((src, i) => (
-          <div key={i} className='relative aspect-[4/3] w-full max-w-2xl'>
-            <Image
-              src={src}
-              alt={`Image ${i + 1}`}
-              fill
-              className='object-contain'
-              sizes='(max-width: 768px) 100vw, 50vw'
-              priority={i < 2} // preload first couple for perf
-            />
-          </div>
-        ))}
+    <div className='flex gap-5'>
+      <div className='flex flex-col items-center gap-5'>
+        <Image src={Image01} alt='Image 1' className='max-h-screen w-fit' />
+        <Image src={Image02} alt='Image 2' className='max-h-screen w-fit' />
+        <Image src={Image03} alt='Image 3' className='max-h-screen w-fit' />
+        <Image src={Image04} alt='Image 4' className='max-h-screen w-fit' />
+        <Image src={Image05} alt='Image 5' className='max-h-screen w-fit' />
+        <Image src={Image06} alt='Image 6' className='max-h-screen w-fit' />
+        <Image src={Image07} alt='Image 7' className='max-h-screen w-fit' />
+        <Image src={Image08} alt='Image 8' className='max-h-screen w-fit' />
+        <Image src={Image09} alt='Image 9' className='max-h-screen w-fit' />
+        <Image src={Image10} alt='Image 10' className='max-h-screen w-fit' />
+        <Image src={Image11} alt='Image 11' className='max-h-screen w-fit' />
+        <Image src={Image12} alt='Image 12' className='max-h-screen w-fit' />
+        <Image src={Image13} alt='Image 13' className='max-h-screen w-fit' />
       </div>
-
-      <div className='flex w-full flex-col items-center gap-10 md:w-1/2'>
-        {images2.map((src, i) => (
-          <div key={i} className='relative aspect-[4/3] w-full max-w-2xl'>
-            <Image
-              src={src}
-              alt={`Image ${i + 14}`}
-              fill
-              className='object-contain'
-              sizes='(max-width: 768px) 100vw, 50vw'
-            />
-          </div>
-        ))}
+      <div className='flex flex-col items-center gap-5'>
+        <Image src={Image14} alt='Image 1' className='max-h-screen w-fit' />
+        <Image src={Image15} alt='Image 2' className='max-h-screen w-fit' />
+        <Image src={Image16} alt='Image 3' className='max-h-screen w-fit' />
+        <Image src={Image17} alt='Image 4' className='max-h-screen w-fit' />
+        <Image src={Image18} alt='Image 5' className='max-h-screen w-fit' />
+        <Image src={Image19} alt='Image 6' className='max-h-screen w-fit' />
+        <Image src={Image20} alt='Image 7' className='max-h-screen w-fit' />
+        <Image src={Image21} alt='Image 8' className='max-h-screen w-fit' />
+        <Image src={Image22} alt='Image 9' className='max-h-screen w-fit' />
+        <Image src={Image23} alt='Image 10' className='max-h-screen w-fit' />
+        <Image src={Image24} alt='Image 11' className='max-h-screen w-fit' />
+        <Image src={Image25} alt='Image 12' className='max-h-screen w-fit' />
+        <Image src={Image26} alt='Image 13' className='max-h-screen w-fit' />
       </div>
     </div>
   );
