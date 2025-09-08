@@ -50,7 +50,8 @@ import Image48 from '@/../public/travel/48.webp';
 
 export default function TravelPage() {
   return (
-    <div className='flex flex-col gap-5 md:flex-row'>
+    <div className='container flex flex-col gap-5 md:flex-row'>
+      <h1 className='text-4xl'>Travel</h1>
       <div className='flex flex-col items-center gap-5'>
         <GalleryImage src={Image01} alt='Image 1' />
         <GalleryImage src={Image02} alt='Image 2' />
