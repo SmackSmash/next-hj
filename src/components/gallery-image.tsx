@@ -8,9 +8,8 @@ export default function GalleryImage({ src, alt }: { src: StaticImageData; alt: 
       src={src}
       alt={alt}
       quality={80}
+      loading='lazy'
       style={{
-        width: '100%',
-        height: 'auto',
         maxHeight: '100vh',
         opacity: 0,
         transition: 'all 1s',
