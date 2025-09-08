@@ -5,12 +5,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Autoplay } from 'swiper/modules';
 import 'swiper/css/bundle';
 
-import camelsImage from '@/../public/home/camels.jpg';
-import balconyImage from '@/../public/home/balcony.jpg';
-import chaletImage from '@/../public/home/chalet.jpg';
-import garlicImage from '@/../public/home/garlic.jpg';
-import lampshadesImage from '@/../public/home/lampshades.jpg';
-import skyImage from '@/../public/home/sky.jpg';
+import Image01 from '@/../public/home/1.webp';
+import Image02 from '@/../public/home/2.webp';
+import Image03 from '@/../public/home/3.webp';
+import Image04 from '@/../public/home/4.webp';
+import Image05 from '@/../public/home/5.webp';
+import Image06 from '@/../public/home/6.webp';
+import Image07 from '@/../public/home/7.webp';
 
 export default function HomeSlider() {
   return (
@@ -28,22 +29,25 @@ export default function HomeSlider() {
       className='size-full bg-zinc-900'
     >
       <SwiperSlide>
-        <Image src={balconyImage} alt='Balcony' fill style={{ objectFit: 'cover' }} />
+        <Image src={Image01} alt='Balcony' fill style={{ objectFit: 'cover' }} />
       </SwiperSlide>
       <SwiperSlide>
-        <Image src={camelsImage} alt='Camels' fill style={{ objectFit: 'cover' }} />
+        <Image src={Image02} alt='Lampshades' fill style={{ objectFit: 'cover' }} />
       </SwiperSlide>
       <SwiperSlide>
-        <Image src={lampshadesImage} alt='Lampshades' fill style={{ objectFit: 'cover' }} />
+        <Image src={Image03} alt='Garlic' fill style={{ objectFit: 'cover' }} />
       </SwiperSlide>
       <SwiperSlide>
-        <Image src={chaletImage} alt='Chalet' fill style={{ objectFit: 'cover' }} />
+        <Image src={Image04} alt='Fisherman' fill style={{ objectFit: 'cover' }} />
       </SwiperSlide>
       <SwiperSlide>
-        <Image src={garlicImage} alt='Garlic' fill style={{ objectFit: 'cover' }} />
+        <Image src={Image05} alt='Camels' fill style={{ objectFit: 'cover' }} />
       </SwiperSlide>
       <SwiperSlide>
-        <Image src={skyImage} alt='Sky' fill style={{ objectFit: 'cover' }} />
+        <Image src={Image06} alt='Pool' fill style={{ objectFit: 'cover' }} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Image src={Image07} alt='Chair lift' fill style={{ objectFit: 'cover' }} />
       </SwiperSlide>
     </Swiper>
   );
