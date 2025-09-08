@@ -7,17 +7,20 @@ export default function GalleryImage({ src, alt }: { src: StaticImageData; alt: 
     <Image
       src={src}
       alt={alt}
-      layout='responsive'
-      loading='lazy'
+      quality={80}
       style={{
         width: '100%',
         height: 'auto',
         maxHeight: '100vh',
         opacity: 0,
-        transition: 'opacity 1s'
+        transition: 'all 1s',
+        transform: 'translateY(15px)'
       }}
       onLoad={e => {
-        if (e.target instanceof HTMLElement) e.target.style.opacity = '1';
+        if (e.target instanceof HTMLElement) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0px)';
+        }
       }}
       sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw'
     />

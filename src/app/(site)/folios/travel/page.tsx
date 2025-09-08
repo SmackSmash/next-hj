@@ -48,7 +48,7 @@ import Image46 from '@/../public/travel/46.webp';
 import Image47 from '@/../public/travel/47.webp';
 import Image48 from '@/../public/travel/48.webp';
 
-export default function FoliosPage() {
+export default function TravelPage() {
   return (
     <div className='flex flex-col gap-5 md:flex-row'>
       <div className='flex flex-col items-center gap-5'>
