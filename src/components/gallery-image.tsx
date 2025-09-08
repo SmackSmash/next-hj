@@ -10,7 +10,6 @@ export default function GalleryImage({ src, alt }: { src: StaticImageData; alt: 
       quality={80}
       loading='lazy'
       style={{
-        maxHeight: '100vh',
         opacity: 0,
         transition: 'all 1s',
         transform: 'translateY(15px)'
