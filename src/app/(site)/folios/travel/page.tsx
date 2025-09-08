@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import GalleryImage from '@/components/gallery-image';
 import Image01 from '@/../public/travel/01.webp';
 import Image02 from '@/../public/travel/02.webp';
@@ -51,7 +50,7 @@ import Image48 from '@/../public/travel/48.webp';
 
 export default function FoliosPage() {
   return (
-    <div className='flex gap-5'>
+    <div className='flex flex-col gap-5 md:flex-row'>
       <div className='flex flex-col items-center gap-5'>
         <GalleryImage src={Image01} alt='Image 1' />
         <GalleryImage src={Image02} alt='Image 2' />
@@ -66,21 +65,43 @@ export default function FoliosPage() {
         <GalleryImage src={Image11} alt='Image 11' />
         <GalleryImage src={Image12} alt='Image 12' />
         <GalleryImage src={Image13} alt='Image 13' />
+        <GalleryImage src={Image14} alt='Image 14' />
+        <GalleryImage src={Image15} alt='Image 15' />
+        <GalleryImage src={Image16} alt='Image 16' />
+        <GalleryImage src={Image17} alt='Image 17' />
+        <GalleryImage src={Image18} alt='Image 18' />
+        <GalleryImage src={Image19} alt='Image 19' />
+        <GalleryImage src={Image20} alt='Image 20' />
+        <GalleryImage src={Image21} alt='Image 21' />
+        <GalleryImage src={Image22} alt='Image 22' />
+        <GalleryImage src={Image23} alt='Image 23' />
+        <GalleryImage src={Image24} alt='Image 24' />
       </div>
       <div className='flex flex-col items-center gap-5'>
-        <GalleryImage src={Image14} alt='Image 1' />
-        <GalleryImage src={Image15} alt='Image 2' />
-        <GalleryImage src={Image16} alt='Image 3' />
-        <GalleryImage src={Image17} alt='Image 4' />
-        <GalleryImage src={Image18} alt='Image 5' />
-        <GalleryImage src={Image19} alt='Image 6' />
-        <GalleryImage src={Image20} alt='Image 7' />
-        <GalleryImage src={Image21} alt='Image 8' />
-        <GalleryImage src={Image22} alt='Image 9' />
-        <GalleryImage src={Image23} alt='Image 10' />
-        <GalleryImage src={Image24} alt='Image 11' />
-        <GalleryImage src={Image25} alt='Image 12' />
-        <GalleryImage src={Image26} alt='Image 13' />
+        <GalleryImage src={Image25} alt='Image 25' />
+        <GalleryImage src={Image26} alt='Image 26' />
+        <GalleryImage src={Image27} alt='Image 27' />
+        <GalleryImage src={Image28} alt='Image 28' />
+        <GalleryImage src={Image29} alt='Image 29' />
+        <GalleryImage src={Image30} alt='Image 30' />
+        <GalleryImage src={Image31} alt='Image 31' />
+        <GalleryImage src={Image32} alt='Image 32' />
+        <GalleryImage src={Image33} alt='Image 33' />
+        <GalleryImage src={Image34} alt='Image 34' />
+        <GalleryImage src={Image35} alt='Image 35' />
+        <GalleryImage src={Image36} alt='Image 36' />
+        <GalleryImage src={Image37} alt='Image 37' />
+        <GalleryImage src={Image38} alt='Image 38' />
+        <GalleryImage src={Image39} alt='Image 39' />
+        <GalleryImage src={Image40} alt='Image 40' />
+        <GalleryImage src={Image41} alt='Image 41' />
+        <GalleryImage src={Image42} alt='Image 42' />
+        <GalleryImage src={Image43} alt='Image 43' />
+        <GalleryImage src={Image44} alt='Image 44' />
+        <GalleryImage src={Image45} alt='Image 45' />
+        <GalleryImage src={Image46} alt='Image 46' />
+        <GalleryImage src={Image47} alt='Image 47' />
+        <GalleryImage src={Image48} alt='Image 48' />
       </div>
     </div>
   );

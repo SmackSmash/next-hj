@@ -22,7 +22,7 @@ export default function NavBar() {
       </Link>
       <Link
         href='/folios'
-        className={`border-zinc-800 pb-2 dark:border-zinc-100 [&.active]:border-b-2 ${pathname === '/folios' ? 'active' : ''}`}
+        className={`border-zinc-800 pb-2 dark:border-zinc-100 [&.active]:border-b-2 ${pathname.includes('/folios') ? 'active' : ''}`}
       >
         Folios
       </Link>
