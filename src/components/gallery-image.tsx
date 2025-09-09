@@ -5,6 +5,7 @@ import * as Dialog from '@radix-ui/react-dialog';
 import { IoMdClose } from 'react-icons/io';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import './gallery-image.css';
 import 'swiper/css/bundle';
 
 type GalleryImageProps = {
