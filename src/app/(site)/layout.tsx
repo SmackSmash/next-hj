@@ -28,9 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} bg-zinc-100 antialiased dark:bg-zinc-950`}
+      >
         <Providers>
-          <div className='flex min-h-screen flex-col bg-zinc-100 p-20 font-sans dark:bg-zinc-950'>
+          <div className='container mx-auto flex min-h-screen flex-col p-10 font-sans'>
             <NavBar />
             {children}
             <Footer />

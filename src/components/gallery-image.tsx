@@ -20,7 +20,7 @@ export default function GalleryImage({ src, alt, images }: GalleryImageProps) {
       <Dialog.Trigger asChild>
         <div className='group relative'>
           <div className='absolute top-0 left-0 z-10 flex size-full cursor-pointer items-center justify-center bg-zinc-950/75 opacity-0 backdrop-blur-xs backdrop-saturate-25 transition-opacity duration-300 ease-out group-hover:opacity-100'>
-            <p className='border-b-2 border-zinc-50 py-4 font-light tracking-wide'>
+            <p className='border-b-2 border-zinc-50 py-4 font-light tracking-wide text-zinc-50'>
               View fullscreen
             </p>
           </div>
@@ -32,7 +32,8 @@ export default function GalleryImage({ src, alt, images }: GalleryImageProps) {
             style={{
               opacity: 0,
               transition: 'all 1s',
-              transform: 'translateY(15px)'
+              transform: 'translateY(15px)',
+              borderRadius: '3px'
             }}
             onLoad={e => {
               if (e.target instanceof HTMLElement) {
@@ -45,7 +46,7 @@ export default function GalleryImage({ src, alt, images }: GalleryImageProps) {
         </div>
       </Dialog.Trigger>
       <Dialog.Portal>
-        <Dialog.Overlay className='data-[state=open]:animate-overlayShow fixed inset-0 z-20 bg-zinc-950' />
+        <Dialog.Overlay className='data-[state=open]:animate-overlayShow fixed inset-0 z-20 bg-zinc-50 dark:bg-zinc-950' />
         <Dialog.Content className='data-[state=open]:animate-contentShow fixed top-1/2 left-1/2 z-30 flex size-full -translate-x-1/2 -translate-y-1/2 flex-col justify-center p-[25px] shadow-[var(--shadow-6)] focus:outline-none'>
           <Dialog.Title className='m-0 font-medium'>Swipe or use arrows to navigate</Dialog.Title>
           <Swiper
@@ -83,10 +84,10 @@ export default function GalleryImage({ src, alt, images }: GalleryImageProps) {
           </Swiper>
           <Dialog.Close asChild>
             <button
-              className='text-violet11 bg-gray3 hover:bg-violet4 focus:shadow-violet7 absolute top-2.5 right-2.5 inline-flex size-[25px] appearance-none items-center justify-center rounded-full focus:shadow-[0_0_0_2px] focus:outline-none'
+              className='absolute top-2.5 right-2.5 flex h-[40px] w-[40px] items-center justify-center rounded-full bg-black dark:bg-white'
               aria-label='Close'
             >
-              <IoMdClose />
+              <IoMdClose className='size-[20px] text-white dark:text-black' />
             </button>
           </Dialog.Close>
         </Dialog.Content>

@@ -101,8 +101,8 @@ const images = [
 
 export default function TravelPage() {
   return (
-    <div className='container flex flex-col gap-5 md:flex-row md:items-start'>
-      <h1 className='mb-4 max-w-fit border-b-1 border-zinc-900 pb-4 text-5xl leading-17 font-semibold text-zinc-900 dark:border-zinc-50 dark:text-zinc-50'>
+    <div className='mx-auto flex max-w-4xl flex-col gap-5 md:flex-row md:items-start'>
+      <h1 className='sticky top-0 mb-4 max-w-fit border-b-1 border-zinc-900 pb-4 text-5xl leading-17 font-semibold text-zinc-900 dark:border-zinc-50 dark:text-zinc-50'>
         Travel
       </h1>
       <div className='flex flex-col items-center gap-5'>
