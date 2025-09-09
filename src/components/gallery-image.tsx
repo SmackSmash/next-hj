@@ -55,9 +55,9 @@ export default function GalleryImage({ src, alt, images }: GalleryImageProps) {
             modules={[Navigation]}
             className='size-full'
           >
-            {images?.map(image => (
-              <SwiperSlide className='h-max-1vh'>
-                <Image src={image} alt='Balcony' className='h-max-full' />
+            {images?.map((image, index) => (
+              <SwiperSlide key={index} className='h-max-1vh'>
+                <Image src={image} alt='Gallery Image' className='h-max-full' />
               </SwiperSlide>
             ))}
           </Swiper>
