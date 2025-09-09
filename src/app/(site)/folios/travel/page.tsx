@@ -102,6 +102,9 @@ const images = [
 export default function TravelPage() {
   return (
     <div className='mx-auto flex max-w-4xl flex-col gap-5 md:flex-row md:items-start'>
+      <h1 className='sticky top-0 mb-4 max-w-fit border-b-1 border-zinc-900 pb-4 text-5xl font-semibold text-zinc-900 md:order-1 dark:border-zinc-50 dark:text-zinc-50'>
+        Travel
+      </h1>
       <div className='flex flex-col items-center gap-5'>
         <GalleryImage src={Image01} alt='Image 1' images={images} />
         <GalleryImage src={Image02} alt='Image 2' images={images} />
@@ -154,9 +157,6 @@ export default function TravelPage() {
         <GalleryImage src={Image47} alt='Image 47' images={images} />
         <GalleryImage src={Image48} alt='Image 48' images={images} />
       </div>
-      <h1 className='sticky top-0 mb-4 max-w-fit border-b-1 border-zinc-900 pb-4 text-5xl leading-17 font-semibold text-zinc-900 dark:border-zinc-50 dark:text-zinc-50'>
-        Travel
-      </h1>
     </div>
   );
 }
