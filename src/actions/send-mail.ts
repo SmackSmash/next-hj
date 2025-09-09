@@ -1,6 +1,7 @@
 'use server';
 
 import nodemailer from 'nodemailer';
+import { type FieldValues } from 'react-hook-form';
 
 const transporter = nodemailer.createTransport({
   host: process.env.SMTP_SERVER_HOST,
@@ -12,13 +13,14 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-export default async function sendMail() {
+export default async function sendMail(data: FieldValues) {
+  const { name, email, message } = data;
   const info = await transporter.sendMail({
-    from: process.env.SMTP_SERVER_USER,
+    from: email,
     to: process.env.SMTP_SERVER_TARGET,
-    subject: 'Hello Again',
-    text: 'Hello world?', // plain‑text body
-    html: '<b>Hello world?</b>' // HTML body
+    subject: `Contact form message from ${name}`,
+    text: message, // plain‑text body
+    html: `<p>${message}</p>` // HTML body
   });
 
   console.log('Message sent:', info.messageId);

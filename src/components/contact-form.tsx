@@ -1,7 +1,7 @@
 'use client';
 
 // TODO: Send the emeail
-// import sendMail from '@/actions/send-mail';
+import sendMail from '@/actions/send-mail';
 import { type FieldValues, useForm } from 'react-hook-form';
 
 export default function ContactForm() {
@@ -12,8 +12,7 @@ export default function ContactForm() {
   } = useForm();
 
   const onSubmit = async (data: FieldValues) => {
-    await new Promise(res => setTimeout(res, 1000));
-    console.log(data);
+    await sendMail(data);
   };
 
   if (isSubmitSuccessful) return <p>We&aposll be in touch soon!</p>;
