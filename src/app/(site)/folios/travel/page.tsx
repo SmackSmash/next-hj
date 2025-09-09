@@ -48,20 +48,73 @@ import Image46 from '@/../public/travel/46.webp';
 import Image47 from '@/../public/travel/47.webp';
 import Image48 from '@/../public/travel/48.webp';
 
+const images = [
+  Image01,
+  Image02,
+  Image03,
+  Image04,
+  Image05,
+  Image06,
+  Image07,
+  Image08,
+  Image09,
+  Image10,
+  Image11,
+  Image12,
+  Image13,
+  Image14,
+  Image15,
+  Image16,
+  Image17,
+  Image18,
+  Image19,
+  Image20,
+  Image21,
+  Image22,
+  Image23,
+  Image24,
+  Image25,
+  Image26,
+  Image27,
+  Image28,
+  Image29,
+  Image30,
+  Image31,
+  Image32,
+  Image33,
+  Image34,
+  Image35,
+  Image36,
+  Image37,
+  Image38,
+  Image39,
+  Image40,
+  Image41,
+  Image42,
+  Image43,
+  Image44,
+  Image45,
+  Image46,
+  Image47,
+  Image48
+];
+
 export default function TravelPage() {
   return (
     <div className='container flex flex-col gap-5 md:flex-row'>
-      <h1 className='text-4xl'>Travel</h1>
+      <h1 className='mb-4 max-w-fit border-b-1 border-zinc-900 pb-4 text-5xl leading-17 font-semibold text-zinc-900 dark:border-zinc-50 dark:text-zinc-50'>
+        Travel
+      </h1>
       <div className='flex flex-col items-center gap-5'>
-        <GalleryImage src={Image01} alt='Image 1' />
-        <GalleryImage src={Image02} alt='Image 2' />
-        <GalleryImage src={Image03} alt='Image 3' />
-        <GalleryImage src={Image04} alt='Image 4' />
-        <GalleryImage src={Image05} alt='Image 5' />
-        <GalleryImage src={Image06} alt='Image 6' />
-        <GalleryImage src={Image07} alt='Image 7' />
-        <GalleryImage src={Image08} alt='Image 8' />
-        <GalleryImage src={Image09} alt='Image 9' />
+        <GalleryImage src={Image01} alt='Image 1' images={images} />
+        <GalleryImage src={Image02} alt='Image 2' images={images} />
+        <GalleryImage src={Image03} alt='Image 3' images={images} />
+        <GalleryImage src={Image04} alt='Image 4' images={images} />
+        <GalleryImage src={Image05} alt='Image 5' images={images} />
+        <GalleryImage src={Image06} alt='Image 6' images={images} />
+        <GalleryImage src={Image07} alt='Image 7' images={images} />
+        <GalleryImage src={Image08} alt='Image 8' images={images} />
+        <GalleryImage src={Image09} alt='Image 9' images={images} />
         <GalleryImage src={Image10} alt='Image 10' />
         <GalleryImage src={Image11} alt='Image 11' />
         <GalleryImage src={Image12} alt='Image 12' />

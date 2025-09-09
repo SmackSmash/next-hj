@@ -22,7 +22,7 @@ export default function HomeSlider() {
         crossFade: true
       }}
       autoplay={{
-        delay: 3000
+        delay: 2000
       }}
       speed={2000}
       modules={[EffectFade, Autoplay]}
