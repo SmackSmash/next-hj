@@ -115,47 +115,47 @@ export default function TravelPage() {
         <GalleryImage src={Image07} alt='Image 7' images={images} />
         <GalleryImage src={Image08} alt='Image 8' images={images} />
         <GalleryImage src={Image09} alt='Image 9' images={images} />
-        <GalleryImage src={Image10} alt='Image 10' />
-        <GalleryImage src={Image11} alt='Image 11' />
-        <GalleryImage src={Image12} alt='Image 12' />
-        <GalleryImage src={Image13} alt='Image 13' />
-        <GalleryImage src={Image14} alt='Image 14' />
-        <GalleryImage src={Image15} alt='Image 15' />
-        <GalleryImage src={Image16} alt='Image 16' />
-        <GalleryImage src={Image17} alt='Image 17' />
-        <GalleryImage src={Image18} alt='Image 18' />
-        <GalleryImage src={Image19} alt='Image 19' />
-        <GalleryImage src={Image20} alt='Image 20' />
-        <GalleryImage src={Image21} alt='Image 21' />
-        <GalleryImage src={Image22} alt='Image 22' />
-        <GalleryImage src={Image23} alt='Image 23' />
-        <GalleryImage src={Image24} alt='Image 24' />
+        <GalleryImage src={Image10} alt='Image 10' images={images} />
+        <GalleryImage src={Image11} alt='Image 11' images={images} />
+        <GalleryImage src={Image12} alt='Image 12' images={images} />
+        <GalleryImage src={Image13} alt='Image 13' images={images} />
+        <GalleryImage src={Image14} alt='Image 14' images={images} />
+        <GalleryImage src={Image15} alt='Image 15' images={images} />
+        <GalleryImage src={Image16} alt='Image 16' images={images} />
+        <GalleryImage src={Image17} alt='Image 17' images={images} />
+        <GalleryImage src={Image18} alt='Image 18' images={images} />
+        <GalleryImage src={Image19} alt='Image 19' images={images} />
+        <GalleryImage src={Image20} alt='Image 20' images={images} />
+        <GalleryImage src={Image21} alt='Image 21' images={images} />
+        <GalleryImage src={Image22} alt='Image 22' images={images} />
+        <GalleryImage src={Image23} alt='Image 23' images={images} />
+        <GalleryImage src={Image24} alt='Image 24' images={images} />
       </div>
       <div className='flex flex-col items-center gap-5'>
-        <GalleryImage src={Image25} alt='Image 25' />
-        <GalleryImage src={Image26} alt='Image 26' />
-        <GalleryImage src={Image27} alt='Image 27' />
-        <GalleryImage src={Image28} alt='Image 28' />
-        <GalleryImage src={Image29} alt='Image 29' />
-        <GalleryImage src={Image30} alt='Image 30' />
-        <GalleryImage src={Image31} alt='Image 31' />
-        <GalleryImage src={Image32} alt='Image 32' />
-        <GalleryImage src={Image33} alt='Image 33' />
-        <GalleryImage src={Image34} alt='Image 34' />
-        <GalleryImage src={Image35} alt='Image 35' />
-        <GalleryImage src={Image36} alt='Image 36' />
-        <GalleryImage src={Image37} alt='Image 37' />
-        <GalleryImage src={Image38} alt='Image 38' />
-        <GalleryImage src={Image39} alt='Image 39' />
-        <GalleryImage src={Image40} alt='Image 40' />
-        <GalleryImage src={Image41} alt='Image 41' />
-        <GalleryImage src={Image42} alt='Image 42' />
-        <GalleryImage src={Image43} alt='Image 43' />
-        <GalleryImage src={Image44} alt='Image 44' />
-        <GalleryImage src={Image45} alt='Image 45' />
-        <GalleryImage src={Image46} alt='Image 46' />
-        <GalleryImage src={Image47} alt='Image 47' />
-        <GalleryImage src={Image48} alt='Image 48' />
+        <GalleryImage src={Image25} alt='Image 25' images={images} />
+        <GalleryImage src={Image26} alt='Image 26' images={images} />
+        <GalleryImage src={Image27} alt='Image 27' images={images} />
+        <GalleryImage src={Image28} alt='Image 28' images={images} />
+        <GalleryImage src={Image29} alt='Image 29' images={images} />
+        <GalleryImage src={Image30} alt='Image 30' images={images} />
+        <GalleryImage src={Image31} alt='Image 31' images={images} />
+        <GalleryImage src={Image32} alt='Image 32' images={images} />
+        <GalleryImage src={Image33} alt='Image 33' images={images} />
+        <GalleryImage src={Image34} alt='Image 34' images={images} />
+        <GalleryImage src={Image35} alt='Image 35' images={images} />
+        <GalleryImage src={Image36} alt='Image 36' images={images} />
+        <GalleryImage src={Image37} alt='Image 37' images={images} />
+        <GalleryImage src={Image38} alt='Image 38' images={images} />
+        <GalleryImage src={Image39} alt='Image 39' images={images} />
+        <GalleryImage src={Image40} alt='Image 40' images={images} />
+        <GalleryImage src={Image41} alt='Image 41' images={images} />
+        <GalleryImage src={Image42} alt='Image 42' images={images} />
+        <GalleryImage src={Image43} alt='Image 43' images={images} />
+        <GalleryImage src={Image44} alt='Image 44' images={images} />
+        <GalleryImage src={Image45} alt='Image 45' images={images} />
+        <GalleryImage src={Image46} alt='Image 46' images={images} />
+        <GalleryImage src={Image47} alt='Image 47' images={images} />
+        <GalleryImage src={Image48} alt='Image 48' images={images} />
       </div>
     </div>
   );

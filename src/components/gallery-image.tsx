@@ -10,7 +10,7 @@ import 'swiper/css/bundle';
 type GalleryImageProps = {
   src: StaticImageData;
   alt: string;
-  images?: StaticImageData[];
+  images: StaticImageData[];
 };
 
 export default function GalleryImage({ src, alt, images }: GalleryImageProps) {
@@ -48,6 +48,7 @@ export default function GalleryImage({ src, alt, images }: GalleryImageProps) {
         <Dialog.Content className='data-[state=open]:animate-contentShow fixed top-1/2 left-1/2 z-30 flex size-full -translate-x-1/2 -translate-y-1/2 flex-col justify-center p-[25px] shadow-[var(--shadow-6)] focus:outline-none'>
           <Dialog.Title className='m-0 font-medium'>Swipe or use arrows to navigate</Dialog.Title>
           <Swiper
+            initialSlide={images.indexOf(src)}
             grabCursor={true}
             centeredSlides={true}
             slidesPerView={'auto'}
@@ -56,7 +57,7 @@ export default function GalleryImage({ src, alt, images }: GalleryImageProps) {
             spaceBetween={30}
             className='size-full'
           >
-            {images?.map((image, index) => (
+            {images.map((image, index) => (
               <SwiperSlide key={index} className='flex size-full items-center justify-center'>
                 <Image
                   src={image}
