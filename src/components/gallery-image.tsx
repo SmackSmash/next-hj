@@ -48,7 +48,9 @@ export default function GalleryImage({ src, alt, images }: GalleryImageProps) {
       <Dialog.Portal>
         <Dialog.Overlay className='data-[state=open]:animate-overlayShow fixed inset-0 z-20 bg-zinc-50 dark:bg-zinc-950' />
         <Dialog.Content className='data-[state=open]:animate-contentShow fixed top-1/2 left-1/2 z-30 flex size-full -translate-x-1/2 -translate-y-1/2 flex-col justify-center p-[25px] shadow-[var(--shadow-6)] focus:outline-none'>
-          <Dialog.Title className='m-0 font-medium'>Swipe or use arrows to navigate</Dialog.Title>
+          <Dialog.Title className='m-0 w-full text-center'>
+            Swipe or use arrows to navigate between slides
+          </Dialog.Title>
           <Swiper
             initialSlide={images.indexOf(src)}
             grabCursor={true}
