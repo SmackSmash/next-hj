@@ -1,6 +1,7 @@
-import aboutImage from '@/../public/about.jpg';
 import Image from 'next/image';
 import { type Metadata } from 'next';
+import aboutImage from '@/../public/about.jpg';
+import GalleryImage from '@/components/gallery-image';
 
 export const metadata: Metadata = {
   title: 'About | Harrison Jack Photography'
@@ -28,7 +29,11 @@ export default function AboutPage() {
             </p>
           </div>
           <div className='md:w-1/3'>
-            <Image src={aboutImage} alt='A photo of Chris Harrison and Iain Jack' />
+            <GalleryImage
+              src={aboutImage}
+              alt='A photo of Chris Harrison and Iain Jack'
+              images={[aboutImage]}
+            />
           </div>
         </div>
       </div>
