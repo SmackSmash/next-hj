@@ -21,19 +21,19 @@ export default function Home() {
             <div className='flex justify-between'>
               <Link
                 href='/about'
-                className='py-1 text-center text-lg tracking-wider text-zinc-50 opacity-90 text-shadow-sm hover:opacity-100'
+                className='py-1 text-center text-lg font-light tracking-wider text-zinc-50 opacity-90 text-shadow-sm hover:opacity-100'
               >
                 About
               </Link>
               <Link
                 href='/folios'
-                className='py-1 text-center text-lg tracking-wider text-zinc-50 opacity-90 text-shadow-sm hover:opacity-100'
+                className='py-1 text-center text-lg font-light tracking-wider text-zinc-50 opacity-90 text-shadow-sm hover:opacity-100'
               >
                 Folios
               </Link>
               <Link
                 href='contact'
-                className='py-1 text-center text-lg tracking-wider text-zinc-50 opacity-90 text-shadow-sm hover:opacity-100'
+                className='py-1 text-center text-lg font-light tracking-wider text-zinc-50 opacity-90 text-shadow-sm hover:opacity-100'
               >
                 Contact
               </Link>
@@ -45,14 +45,14 @@ export default function Home() {
               target='_blank'
               className='opacity-90 hover:opacity-100'
             >
-              <SiFacebook className='size-7 fill-white opacity-90 hover:opacity-100' />
+              <SiFacebook className='size-5 fill-white opacity-90 hover:opacity-100' />
             </Link>
             <Link
               href='https://www.instagram.com/harrisonjackphotography/'
               target='_blank'
               className='opacity-90 hover:opacity-100'
             >
-              <SiInstagram className='size-7 fill-white opacity-90 hover:opacity-100' />
+              <SiInstagram className='size-5 fill-white opacity-90 hover:opacity-100' />
             </Link>
           </div>
         </div>
