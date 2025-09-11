@@ -5,8 +5,8 @@ export default function AboutPage() {
   return (
     <>
       <div className='flex flex-grow flex-col justify-center'>
-        <div className='mx-auto flex max-w-2xl gap-8'>
-          <div className='w-2/3'>
+        <div className='mx-auto flex max-w-2xl flex-col gap-8 md:flex-row'>
+          <div className='md:w-2/3'>
             <h1 className='mb-4 max-w-fit border-b-1 border-zinc-900 pb-4 text-5xl font-semibold dark:border-zinc-50'>
               Who we are
             </h1>
@@ -22,7 +22,7 @@ export default function AboutPage() {
               frequent flyer with Easyjet.
             </p>
           </div>
-          <div className='w-1/3'>
+          <div className='md:w-1/3'>
             <Image src={aboutImage} alt='A photo of Chris Harrison and Iain Jack' />
           </div>
         </div>

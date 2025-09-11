@@ -3,7 +3,7 @@ import ContactForm from '@/components/contact-form';
 export default function ContactPage() {
   return (
     <div className='flex flex-grow flex-col justify-center'>
-      <div className='mx-auto flex max-w-2xl gap-8'>
+      <div className='mx-auto flex max-w-2xl flex-col gap-8 md:flex-row'>
         <div>
           <h1 className='mb-4 max-w-fit border-b-1 border-zinc-900 pb-4 text-5xl font-semibold dark:border-zinc-50'>
             Get in touch
