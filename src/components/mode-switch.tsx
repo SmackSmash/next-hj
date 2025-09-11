@@ -21,7 +21,7 @@ export default function ThemeSwitch() {
 
   if (mounted) {
     return (
-      <div className='ml-auto flex items-center'>
+      <div className='flex items-center'>
         <label htmlFor='dark-mode'>
           {resolvedTheme === 'dark' ? <FiMoon className='size-5' /> : <FiSun className='size-5' />}
         </label>
