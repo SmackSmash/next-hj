@@ -26,7 +26,7 @@ export default function GalleryImage({ src, alt, images }: GalleryImageProps) {
           className={`group relative overflow-hidden rounded transition-all duration-1000 ${isLoaded ? 'translate-y-[0px] opacity-100' : 'translate-y-[15px] opacity-0'}`}
         >
           <div className='absolute top-0 left-0 z-10 flex size-full cursor-pointer items-center justify-center bg-zinc-950/25 opacity-0 backdrop-blur-xs backdrop-saturate-25 transition-opacity duration-300 ease-out group-hover:opacity-100'>
-            <p className='flex items-center gap-2 font-light tracking-wide text-zinc-50'>
+            <p className='flex translate-y-[15px] items-center gap-2 font-light tracking-wide text-zinc-50 transition-all group-hover:translate-y-[0px]'>
               <IoExpandSharp className='inline-block' />
               Expand
             </p>
