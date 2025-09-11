@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image, { type StaticImageData } from 'next/image';
 import * as Dialog from '@radix-ui/react-dialog';
 import { IoMdClose } from 'react-icons/io';
+import { IoExpandSharp } from 'react-icons/io5';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import './gallery-image.css';
@@ -25,7 +26,10 @@ export default function GalleryImage({ src, alt, images }: GalleryImageProps) {
           className={`group relative overflow-hidden rounded transition-all duration-1000 ${isLoaded ? 'translate-y-[0px] opacity-100' : 'translate-y-[15px] opacity-0'}`}
         >
           <div className='absolute top-0 left-0 z-10 flex size-full cursor-pointer items-center justify-center bg-zinc-950/75 opacity-0 backdrop-blur-xs backdrop-saturate-25 transition-opacity duration-300 ease-out group-hover:opacity-100'>
-            <p className='font-light tracking-wide text-zinc-50'>View fullscreen</p>
+            <p className='flex items-center gap-2 font-light tracking-wide text-zinc-50'>
+              <IoExpandSharp className='inline-block' />
+              Expand
+            </p>
           </div>
           <Image
             src={src}
@@ -78,7 +82,7 @@ export default function GalleryImage({ src, alt, images }: GalleryImageProps) {
           </Swiper>
           <Dialog.Close asChild>
             <button
-              className='absolute top-2.5 right-2.5 flex h-[40px] w-[40px] items-center justify-center rounded-full bg-black dark:bg-white'
+              className='absolute top-2.5 right-2.5 flex h-[40px] w-[40px] cursor-pointer items-center justify-center rounded-full bg-black dark:bg-white'
               aria-label='Close'
             >
               <IoMdClose className='size-[20px] text-white dark:text-black' />
