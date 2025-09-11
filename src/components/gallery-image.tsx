@@ -44,9 +44,16 @@ export default function GalleryImage({ src, alt, images }: GalleryImageProps) {
       <Dialog.Portal>
         <Dialog.Overlay className='data-[state=open]:animate-overlayShow fixed inset-0 z-20 bg-zinc-50 dark:bg-zinc-950' />
         <Dialog.Content className='data-[state=open]:animate-contentShow fixed top-1/2 left-1/2 z-30 flex size-full -translate-x-1/2 -translate-y-1/2 flex-col justify-center p-[25px] shadow-[var(--shadow-6)] focus:outline-none'>
-          <Dialog.Title className='absolute top-2.5 left-2.5'>
-            {images.length > 1 && 'Swipe or use arrows to navigate between slides'}
-          </Dialog.Title>
+          <div className='absolute top-0 left-0 z-20 flex w-full justify-between bg-zinc-50 px-8 py-4 dark:bg-zinc-950'>
+            <Dialog.Title>
+              {images.length > 1 && 'Swipe or use arrows to navigate between slides'}
+            </Dialog.Title>
+            <Dialog.Close asChild>
+              <button className='cursor-pointer' aria-label='Close'>
+                ← Go back
+              </button>
+            </Dialog.Close>
+          </div>
           <Swiper
             initialSlide={images.indexOf(src)}
             grabCursor={true}
@@ -80,11 +87,6 @@ export default function GalleryImage({ src, alt, images }: GalleryImageProps) {
               </SwiperSlide>
             ))}
           </Swiper>
-          <Dialog.Close asChild>
-            <button className='absolute top-2.5 right-2.5 cursor-pointer' aria-label='Close'>
-              ← Go back
-            </button>
-          </Dialog.Close>
         </Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>
