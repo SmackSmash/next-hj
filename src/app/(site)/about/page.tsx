@@ -4,30 +4,30 @@ import Image from 'next/image';
 export default function AboutPage() {
   return (
     <>
-      <div className='flex items-start justify-center'>
-        <div className='mr-20 pt-12'>
-          <div className='mb-4 max-w-fit border-b-1 border-zinc-900 pb-4 text-5xl leading-17 font-semibold text-zinc-900 dark:border-zinc-50 dark:text-zinc-50'>
-            Who
-            <br />
-            we are
+      <div className='flex flex-grow flex-col justify-center'>
+        <div className='mx-auto flex max-w-2xl gap-8'>
+          <div className='w-2/3'>
+            <h1 className='mb-4 max-w-fit border-b-1 border-zinc-900 pb-4 text-5xl font-semibold dark:border-zinc-50'>
+              Who we are
+            </h1>
+            <p className='mb-4'>
+              A collaboration of more than 30 years, Christine (Harrison) and Iain (Jack) work
+              locally and internationally from both the UK and the French Alps.
+            </p>
+            <p>
+              Originating as a partnership during the heyday of the Manchester advertising scene
+              Christine and Iain went on to build a loyal portfolio of direct clients in the
+              commercial and editorial arena. Iain now heads up the UK side of the business,
+              however, Christine, although now living for most of the year in the French alps, is a
+              frequent flyer with Easyjet.
+            </p>
+          </div>
+          <div className='w-1/3'>
+            <Image src={aboutImage} alt='A photo of Chris Harrison and Iain Jack' />
           </div>
         </div>
-        <div className='sticky max-w-80'>
-          <Image src={aboutImage} alt='A photo of Chris Harrison and Iain Jack' className='mb-6' />
-          <p className='my-4 text-lg/8 tracking-wide'>
-            A collaboration of more than 30 years, Christine (Harrison) and Iain (Jack) work locally
-            and internationally from both the UK and the French Alps.
-          </p>
-          <p className='my-4 text-lg/8 tracking-wide'>
-            Originating as a partnership during the heyday of the Manchester advertising scene
-            Christine and Iain went on to build a loyal portfolio of direct clients in the
-            commercial and editorial arena. Iain now heads up the UK side of the business, however,
-            Christine, although now living for most of the year in the French alps, is a frequent
-            flyer with Easyjet.
-          </p>
-        </div>
       </div>
-      <ul className='container mx-auto mt-20 text-center text-2xl text-zinc-400 italic dark:text-zinc-600'>
+      <ul className='container mx-auto mt-20 text-center text-zinc-400 italic dark:text-zinc-600'>
         <li className='inline-block px-2'>Argos</li>
         <li className='inline-block px-2'>Berghaus </li>
         <li className='inline-block px-2'>Barbour </li>
