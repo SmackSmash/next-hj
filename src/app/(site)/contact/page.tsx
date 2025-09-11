@@ -1,4 +1,9 @@
+import { type Metadata } from 'next';
 import ContactForm from '@/components/contact-form';
+
+export const metadata: Metadata = {
+  title: 'Contact | Harrison Jack Photography'
+};
 
 export default function ContactPage() {
   return (

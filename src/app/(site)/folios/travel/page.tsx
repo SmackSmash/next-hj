@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import { type Metadata } from 'next';
 import GalleryImage from '@/components/gallery-image';
 import Image01 from '@/../public/travel/01.webp';
 import Image02 from '@/../public/travel/02.webp';
@@ -99,12 +101,19 @@ const images = [
   Image48
 ];
 
+export const metadata: Metadata = {
+  title: 'Folios / Travel | Harrison Jack Photography'
+};
+
 export default function TravelPage() {
   return (
     <div className='mx-auto flex max-w-4xl flex-col gap-5 md:flex-row md:items-start'>
-      <h1 className='mb-4 max-w-fit border-b-1 border-zinc-900 pb-4 text-4xl font-semibold text-zinc-900 md:sticky md:top-20 md:order-1 dark:border-zinc-50 dark:text-zinc-50'>
-        Travel
-      </h1>
+      <div className='flex flex-row items-center justify-between md:sticky md:top-20 md:order-1 md:max-w-fit md:flex-col md:items-start'>
+        <h1 className='mb-4 border-b-1 border-zinc-900 pb-4 text-4xl font-semibold text-zinc-900 dark:border-zinc-50 dark:text-zinc-50'>
+          Travel
+        </h1>
+        <Link href='/folios'>← Go back</Link>
+      </div>
       <div className='flex flex-col items-center gap-5'>
         <GalleryImage src={Image01} alt='Image 1' images={images} />
         <GalleryImage src={Image02} alt='Image 2' images={images} />
