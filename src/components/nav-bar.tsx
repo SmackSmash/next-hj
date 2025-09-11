@@ -42,7 +42,10 @@ export default function NavBar() {
         >
           Contact
         </Link>
-        <button onClick={() => setIsMobileOpen(false)} className='absolute top-10 right-10'>
+        <button
+          onClick={() => setIsMobileOpen(false)}
+          className='absolute top-10 right-10 md:invisible'
+        >
           <IoMdClose className='size-12' />
         </button>
       </div>

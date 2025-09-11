@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Harrison Jack Photography',
+  title: 'Home | Harrison Jack Photography',
   description:
     'A collaboration of more than 30 years, Christine (Harrison) and Iain (Jack) work locally and internationally from both the UK and the French Alps.'
 };
