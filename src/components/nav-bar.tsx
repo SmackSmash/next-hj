@@ -7,18 +7,11 @@ import logoSVG from '@/../public/logo.svg';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import ModeSwitch from './mode-switch';
 import { useState } from 'react';
+import { IoMdClose } from 'react-icons/io';
 
 export default function NavBar() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const pathname = usePathname();
-
-  const handleMobileOpen = () => {
-    setIsMobileOpen(true);
-  };
-
-  const handleMobileClose = () => {
-    setIsMobileOpen(false);
-  };
 
   return (
     <nav className='mb-12 flex items-start gap-4'>
@@ -26,7 +19,7 @@ export default function NavBar() {
         <Image src={logoSVG} alt='Harrison Jack Logo' className='mr-4 w-40 dark:invert' />
       </Link>
       <div
-        className={`${isMobileOpen ? 'visible' : 'invisible'} fixed inset-0 z-10 flex size-full flex-col items-center justify-center gap-4 bg-zinc-200 md:visible md:relative md:size-auto md:flex-row md:bg-transparent`}
+        className={`${isMobileOpen ? 'visible' : 'invisible'} fixed inset-0 z-10 flex size-full flex-col items-center justify-center gap-4 bg-zinc-200 md:visible md:relative md:size-auto md:flex-row md:bg-transparent dark:bg-zinc-800 md:dark:bg-transparent`}
       >
         <Link
           href='/about'
@@ -49,10 +42,13 @@ export default function NavBar() {
         >
           Contact
         </Link>
+        <button onClick={() => setIsMobileOpen(false)} className='absolute top-10 right-10'>
+          <IoMdClose className='size-12' />
+        </button>
       </div>
       <div className='ml-auto flex'>
         <ModeSwitch />
-        <button onClick={() => setIsMobileOpen(!isMobileOpen)} className='ml-4 size-6 md:hidden'>
+        <button onClick={() => setIsMobileOpen(true)} className='ml-4 size-6 md:hidden'>
           <GiHamburgerMenu className='size-full' />
         </button>
       </div>
