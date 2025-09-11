@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import Image, { type StaticImageData } from 'next/image';
 import * as Dialog from '@radix-ui/react-dialog';
 import { IoMdClose } from 'react-icons/io';
@@ -15,10 +16,14 @@ type GalleryImageProps = {
 };
 
 export default function GalleryImage({ src, alt, images }: GalleryImageProps) {
+  const [isLoaded, setIsLoaded] = useState(false);
+
   return (
     <Dialog.Root>
       <Dialog.Trigger asChild>
-        <div className='group relative'>
+        <div
+          className={`group relative overflow-hidden rounded transition-all duration-1000 ${isLoaded ? 'translate-y-[0px] opacity-100' : 'translate-y-[15px] opacity-0'}`}
+        >
           <div className='absolute top-0 left-0 z-10 flex size-full cursor-pointer items-center justify-center bg-zinc-950/75 opacity-0 backdrop-blur-xs backdrop-saturate-25 transition-opacity duration-300 ease-out group-hover:opacity-100'>
             <p className='border-b-2 border-zinc-50 py-4 font-light tracking-wide text-zinc-50'>
               View fullscreen
@@ -29,18 +34,7 @@ export default function GalleryImage({ src, alt, images }: GalleryImageProps) {
             alt={alt}
             quality={80}
             loading='lazy'
-            style={{
-              opacity: 0,
-              transition: 'all 1s',
-              transform: 'translateY(15px)',
-              borderRadius: '3px'
-            }}
-            onLoad={e => {
-              if (e.target instanceof HTMLElement) {
-                e.target.style.opacity = '1';
-                e.target.style.transform = 'translateY(0px)';
-              }
-            }}
+            onLoad={() => setIsLoaded(true)}
             sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw'
           />
         </div>

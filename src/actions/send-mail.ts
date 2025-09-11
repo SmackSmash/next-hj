@@ -3,6 +3,8 @@
 import nodemailer from 'nodemailer';
 import { type FieldValues } from 'react-hook-form';
 
+console.log('Location');
+
 const transporter = nodemailer.createTransport({
   host: process.env.SMTP_SERVER_HOST,
   port: 465,
@@ -14,14 +16,15 @@ const transporter = nodemailer.createTransport({
 });
 
 export default async function sendMail(data: FieldValues) {
-  const { name, email, message } = data;
-  const info = await transporter.sendMail({
-    from: email,
-    to: process.env.SMTP_SERVER_TARGET,
-    subject: `Contact form message from ${name}`,
-    text: message, // plain‑text body
-    html: `<p>${message}</p>` // HTML body
-  });
+  // const { name, email, message } = data;
+  console.log(data);
+  // const info = await transporter.sendMail({
+  //   from: email,
+  //   to: process.env.SMTP_SERVER_TARGET,
+  //   subject: `Contact form message from ${name}`,
+  //   text: message, // plain‑text body
+  //   html: `<p>${message}</p>` // HTML body
+  // });
 
-  console.log('Message sent:', info.messageId);
+  // console.log('Message sent:', info.messageId);
 }

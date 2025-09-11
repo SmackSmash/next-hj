@@ -5,7 +5,7 @@ export default function ContactPage() {
     <div className='flex flex-grow flex-col justify-center'>
       <div className='mx-auto flex max-w-2xl gap-8'>
         <div>
-          <h1 className='mb-4 max-w-fit border-b-1 pb-4 text-5xl font-semibold dark:border-zinc-50 dark:text-zinc-50'>
+          <h1 className='mb-4 max-w-fit border-b-1 border-zinc-900 pb-4 text-5xl font-semibold dark:border-zinc-50'>
             Get in touch
           </h1>
           <p>
