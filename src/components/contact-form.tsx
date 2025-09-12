@@ -27,7 +27,7 @@ export default function ContactForm() {
         type='text'
         name='name'
         id='name'
-        className='border border-zinc-300 p-2 outline-0 focus:border-zinc-600 dark:border-zinc-600 focus:dark:border-zinc-400'
+        className='rounded border border-zinc-300 p-2 outline-0 focus:border-zinc-600 dark:border-zinc-600 focus:dark:border-zinc-400'
       />
       {errors.name && <p>{`${errors.name.message}`}</p>}
       <label htmlFor='email' className='my-2'>
@@ -38,7 +38,7 @@ export default function ContactForm() {
         type='email'
         name='email'
         id='email'
-        className='border border-zinc-300 p-2 outline-0 focus:border-zinc-600 dark:border-zinc-600 focus:dark:border-zinc-400'
+        className='rounded border border-zinc-300 p-2 outline-0 focus:border-zinc-600 dark:border-zinc-600 focus:dark:border-zinc-400'
       />
       {errors.email && <p>{`${errors.email.message}`}</p>}
       <label htmlFor='message' className='my-2'>
@@ -48,13 +48,13 @@ export default function ContactForm() {
         {...register('message', { required: 'Please enter a message' })}
         name='message'
         id='message'
-        className='border border-zinc-300 p-2 outline-0 focus:border-zinc-600 dark:border-zinc-600 focus:dark:border-zinc-400'
+        className='rounded border border-zinc-300 p-2 outline-0 focus:border-zinc-600 dark:border-zinc-600 focus:dark:border-zinc-400'
       />
       {errors.message && <p>{`${errors.message.message}`}</p>}
       <button
         disabled={isSubmitting}
         type='submit'
-        className='mt-2 w-full cursor-pointer bg-zinc-200 p-2 text-zinc-900 disabled:opacity-50'
+        className='mt-2 w-full cursor-pointer rounded bg-zinc-900 p-2 text-zinc-50 disabled:opacity-50 dark:bg-zinc-50 dark:text-zinc-900'
       >
         Send
       </button>
