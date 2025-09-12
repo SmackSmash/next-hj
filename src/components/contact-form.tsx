@@ -19,7 +19,9 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-2'>
-      <label htmlFor='name'>Name</label>
+      <label htmlFor='name' className='mb-2'>
+        Name
+      </label>
       <input
         {...register('name', { required: 'Please enter a name' })}
         type='text'
@@ -28,7 +30,7 @@ export default function ContactForm() {
         className='border border-zinc-300 p-2 outline-0 focus:border-zinc-600 dark:border-zinc-600 focus:dark:border-zinc-400'
       />
       {errors.name && <p>{`${errors.name.message}`}</p>}
-      <label htmlFor='email' className='mt-2'>
+      <label htmlFor='email' className='my-2'>
         Email
       </label>
       <input
@@ -39,7 +41,7 @@ export default function ContactForm() {
         className='border border-zinc-300 p-2 outline-0 focus:border-zinc-600 dark:border-zinc-600 focus:dark:border-zinc-400'
       />
       {errors.email && <p>{`${errors.email.message}`}</p>}
-      <label htmlFor='message' className='mt-2'>
+      <label htmlFor='message' className='my-2'>
         Message
       </label>
       <textarea

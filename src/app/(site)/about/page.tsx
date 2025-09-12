@@ -11,10 +11,12 @@ export default function AboutPage() {
     <>
       <div className='flex flex-grow flex-col justify-center'>
         <div className='mx-auto flex max-w-2xl flex-col gap-8 md:flex-row'>
-          <div className='md:w-1/2'>
-            <h1 className='mb-4 max-w-fit border-b-1 border-zinc-900 pb-4 text-4xl font-semibold dark:border-zinc-50'>
-              Who we are
+          <div className='flex flex-row items-center justify-between md:order-1 md:max-w-fit md:flex-col md:items-start'>
+            <h1 className='mb-4 border-b-1 border-zinc-900 pb-4 text-4xl font-semibold text-zinc-900 dark:border-zinc-50 dark:text-zinc-50'>
+              About
             </h1>
+          </div>
+          <div className='md:w-1/2'>
             <p className='mb-4'>
               A collaboration of more than 30 years, Christine (Harrison) and Iain (Jack) work
               locally and internationally from both the UK and the French Alps.
