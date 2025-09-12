@@ -12,7 +12,7 @@ export default function AboutPage() {
       <div className='flex flex-grow flex-col justify-center'>
         <div className='mx-auto flex max-w-2xl flex-col gap-8 md:flex-row'>
           <div className='flex flex-row items-center justify-between md:order-1 md:max-w-fit md:flex-col md:items-start'>
-            <h1 className='mb-4 border-b-1 border-zinc-900 pb-4 text-4xl font-semibold text-zinc-900 dark:border-zinc-50 dark:text-zinc-50'>
+            <h1 className='mb-2 border-b-1 border-zinc-900 pb-4 text-4xl font-semibold text-zinc-900 dark:border-zinc-50 dark:text-zinc-50'>
               About
             </h1>
           </div>
@@ -38,9 +38,11 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-      <h3 className='mx-auto mt-20 mb-2 text-xl font-light'>Our clients</h3>
-      <ul className='container mx-auto flex max-w-2xl flex-wrap text-zinc-400 italic dark:text-zinc-600'>
-        <div className='basis-full sm:basis-1/2 md:basis-1/3'>
+      <h3 className='mx-auto mt-20 mb-8 w-full max-w-2xl border-b-1 border-zinc-900 pb-4 text-xl font-semibold dark:border-zinc-50'>
+        Our clients
+      </h3>
+      <ul className='container mx-auto flex max-w-2xl flex-wrap font-extralight'>
+        <div className='flex basis-full flex-col gap-2 sm:basis-1/2 md:basis-1/3'>
           <li>Argos</li>
           <li>Berghaus </li>
           <li>Barbour</li>
@@ -51,7 +53,7 @@ export default function AboutPage() {
           <li>Regatta</li>
           <li>Rohan</li>
         </div>
-        <div className='basis-full sm:basis-1/2 md:basis-1/3'>
+        <div className='flex basis-full flex-col gap-2 sm:basis-1/2 md:basis-1/3'>
           <li>Crag Hoppers</li>
           <li>BASF</li>
           <li>Dulux</li>
@@ -62,7 +64,7 @@ export default function AboutPage() {
           <li>Mowbray Hall Cottages</li>
           <li>Sainsburys</li>
         </div>
-        <div className='basis-full sm:basis-1/2 md:basis-1/3'>
+        <div className='flex basis-full flex-col gap-2 sm:basis-1/2 md:basis-1/3'>
           <li>The Sainte Foy Chalet Company</li>
           <li>Union Restaurant </li>
           <li>Sainte Foy Office du Tourisme</li>
