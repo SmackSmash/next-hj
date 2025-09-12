@@ -79,7 +79,6 @@ export default function GalleryImage({ src, alt, images }: GalleryImageProps) {
                       e.target.style.opacity = '1';
                     }
                   }}
-                  className='h-max-full'
                 />
               </SwiperSlide>
             ))}
