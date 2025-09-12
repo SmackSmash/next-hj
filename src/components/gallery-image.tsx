@@ -48,7 +48,7 @@ export default function GalleryImage({ src, alt, images }: GalleryImageProps) {
               {images.length > 1 && 'Swipe or use arrows to navigate between slides'}
             </Dialog.Title>
             <Dialog.Close asChild>
-              <button className='cursor-pointer' aria-label='Close'>
+              <button className='cursor-pointer outline-0' aria-label='Close'>
                 ← Go back
               </button>
             </Dialog.Close>
