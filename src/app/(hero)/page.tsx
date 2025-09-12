@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className='absolute flex h-screen w-screen items-center justify-center'>
       <HomeSlider />
-      <div className='absolute inset-0 z-10 bg-linear-to-r from-black/50 to-transparent p-20'>
+      <div className='absolute inset-0 z-10 bg-linear-to-r from-black/75 via-transparent to-transparent p-20 lg:via-25%'>
         <div className='flex h-full flex-col justify-between'>
           <Image src={logoSVG} alt='Harrison Jack Photography Logo' className='w-40 invert' />
           <div className='max-w-fit'>
