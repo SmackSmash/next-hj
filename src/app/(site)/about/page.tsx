@@ -1,6 +1,5 @@
-import Image from 'next/image';
 import { type Metadata } from 'next';
-import aboutImage from '@/../public/about.jpg';
+import aboutImage from '@/../public/about.webp';
 import GalleryImage from '@/components/gallery-image';
 
 export const metadata: Metadata = {
@@ -12,7 +11,7 @@ export default function AboutPage() {
     <>
       <div className='flex flex-grow flex-col justify-center'>
         <div className='mx-auto flex max-w-2xl flex-col gap-8 md:flex-row'>
-          <div className='md:w-2/3'>
+          <div className='md:w-1/2'>
             <h1 className='mb-4 max-w-fit border-b-1 border-zinc-900 pb-4 text-4xl font-semibold dark:border-zinc-50'>
               Who we are
             </h1>
@@ -28,7 +27,7 @@ export default function AboutPage() {
               frequent flyer with Easyjet.
             </p>
           </div>
-          <div className='md:w-1/3'>
+          <div className='md:w-1/2'>
             <GalleryImage
               src={aboutImage}
               alt='A photo of Chris Harrison and Iain Jack'
