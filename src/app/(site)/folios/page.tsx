@@ -12,6 +12,8 @@ export default function FoliosPage() {
       <Link href='/folios/interiors'>Interiors</Link>
       <Link href='/folios/food'>Food</Link>
       <Link href='/folios/lifestyle'>Lifestyle</Link>
+      <Link href='/folios/advertising'>Advertising</Link>
+      <Link href='/folios/social'>Social</Link>
     </div>
   );
 }

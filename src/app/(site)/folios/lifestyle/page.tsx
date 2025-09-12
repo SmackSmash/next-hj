@@ -108,7 +108,7 @@ const images = [
 ];
 
 export const metadata: Metadata = {
-  title: 'Folios / Food | Harrison Jack Photography'
+  title: 'Folios / Lifestyle | Harrison Jack Photography'
 };
 
 export default function TravelPage() {
