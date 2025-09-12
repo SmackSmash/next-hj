@@ -139,10 +139,10 @@ export default function TravelPage() {
         <GalleryImage src={Image22} alt='Image 22' images={images} />
         <GalleryImage src={Image23} alt='Image 23' images={images} />
         <GalleryImage src={Image24} alt='Image 24' images={images} />
-      </div>
-      <div className='flex flex-col items-center gap-5'>
         <GalleryImage src={Image25} alt='Image 25' images={images} />
         <GalleryImage src={Image26} alt='Image 26' images={images} />
+      </div>
+      <div className='flex flex-col items-center gap-5'>
         <GalleryImage src={Image27} alt='Image 27' images={images} />
         <GalleryImage src={Image28} alt='Image 28' images={images} />
         <GalleryImage src={Image29} alt='Image 29' images={images} />

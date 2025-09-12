@@ -9,6 +9,7 @@ export default function FoliosPage() {
   return (
     <div>
       <Link href='/folios/travel'>Travel</Link>
+      <Link href='/folios/interiors'>Interiors</Link>
     </div>
   );
 }

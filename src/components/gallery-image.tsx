@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import Image, { type StaticImageData } from 'next/image';
 import * as Dialog from '@radix-ui/react-dialog';
-import { IoMdClose } from 'react-icons/io';
 import { IoExpandSharp } from 'react-icons/io5';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
