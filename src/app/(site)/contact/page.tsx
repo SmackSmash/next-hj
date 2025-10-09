@@ -9,13 +9,10 @@ export default function ContactPage() {
   return (
     <div className='flex flex-grow flex-col justify-center'>
       <div className='mx-auto flex max-w-2xl flex-col gap-8 md:flex-row'>
-        <div className='flex flex-row items-center justify-between md:order-1 md:max-w-fit md:flex-col md:items-start'>
-          <h1 className='mb-4 border-b-1 border-zinc-900 pb-4 text-4xl font-semibold text-zinc-900 dark:border-zinc-50 dark:text-zinc-50'>
+        <div className='md:w-1/2'>
+          <h1 className='mb-6 border-b-1 border-zinc-900 pb-4 text-4xl font-semibold text-zinc-900 dark:border-zinc-50 dark:text-zinc-50'>
             Contact
           </h1>
-        </div>
-        <ContactForm />
-        <div>
           <h2 className='mb-2 font-bold'>Phone</h2>
           <p className='pb-2'>
             <span>Chris:</span>{' '}
@@ -34,6 +31,9 @@ export default function ContactPage() {
               enquiries@harrisonjackphoto.com
             </a>
           </p>
+        </div>
+        <div className='md:w-1/2'>
+          <ContactForm />
         </div>
       </div>
     </div>
