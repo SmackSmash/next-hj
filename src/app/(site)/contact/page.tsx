@@ -30,12 +30,8 @@ export default function ContactPage() {
           </p>
           <h2 className='my-2 font-bold'>Email</h2>
           <p>
-            <a href='chris@harrisonjackphoto.com' className='underline'>
-              chris@harrisonjackphoto.com
-            </a>
-            <br />
-            <a href='iain@harrisonjackphoto.com' className='underline'>
-              iain@harrisonjackphoto.com
+            <a href='enquiries@harrisonjackphoto.com' className='underline'>
+              enquiries@harrisonjackphoto.com
             </a>
           </p>
         </div>
