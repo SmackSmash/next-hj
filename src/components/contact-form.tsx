@@ -56,7 +56,7 @@ export default function ContactForm() {
         type='submit'
         className='mt-2 w-full cursor-pointer rounded bg-zinc-900 p-2 text-zinc-50 disabled:opacity-50 dark:bg-zinc-50 dark:text-zinc-900'
       >
-        Send
+        {isSubmitting ? 'Sending Message' : 'Send Message'}
       </button>
     </form>
   );
