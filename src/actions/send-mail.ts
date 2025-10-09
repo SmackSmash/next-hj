@@ -15,8 +15,8 @@ const transporter = nodemailer.createTransport({
 
 export default async function sendMail(data: FieldValues) {
   const { name, email, message } = data;
-  console.log(data);
-  const info = await transporter.sendMail({
+
+  await transporter.sendMail({
     from: process.env.SMTP_SERVER_USER,
     to: process.env.SMTP_SERVER_USER,
     replyTo: `"${name}" <${email}>`,
@@ -24,6 +24,4 @@ export default async function sendMail(data: FieldValues) {
     text: message, // plain‑text body
     html: `<p>${message}</p>` // HTML body
   });
-
-  console.log('Message sent:', info.messageId);
 }
