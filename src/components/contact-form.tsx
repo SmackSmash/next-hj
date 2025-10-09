@@ -15,10 +15,13 @@ export default function ContactForm() {
     await sendMail(data);
   };
 
-  if (isSubmitSuccessful) return <p>We&apos;ll be in touch soon!</p>;
-
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-2'>
+    <form onSubmit={handleSubmit(onSubmit)} className='relative flex flex-col gap-2'>
+      {isSubmitSuccessful && (
+        <div className='absolute flex h-full w-full items-center justify-center bg-zinc-100 dark:bg-zinc-950'>
+          <p>We&apos;ll be in touch soon!</p>
+        </div>
+      )}
       <label htmlFor='name' className='mb-2'>
         Name
       </label>
@@ -27,7 +30,7 @@ export default function ContactForm() {
         type='text'
         name='name'
         id='name'
-        className='rounded border border-zinc-300 p-2 outline-0 focus:border-zinc-600 dark:border-zinc-600 focus:dark:border-zinc-400'
+        className='rounded border border-zinc-400 p-2 outline-0 focus:border-zinc-600 dark:border-zinc-600 focus:dark:border-zinc-400'
       />
       {errors.name && <p>{`${errors.name.message}`}</p>}
       <label htmlFor='email' className='my-2'>
@@ -38,7 +41,7 @@ export default function ContactForm() {
         type='email'
         name='email'
         id='email'
-        className='rounded border border-zinc-300 p-2 outline-0 focus:border-zinc-600 dark:border-zinc-600 focus:dark:border-zinc-400'
+        className='rounded border border-zinc-400 p-2 outline-0 focus:border-zinc-600 dark:border-zinc-600 focus:dark:border-zinc-400'
       />
       {errors.email && <p>{`${errors.email.message}`}</p>}
       <label htmlFor='message' className='my-2'>
@@ -48,7 +51,7 @@ export default function ContactForm() {
         {...register('message', { required: 'Please enter a message' })}
         name='message'
         id='message'
-        className='rounded border border-zinc-300 p-2 outline-0 focus:border-zinc-600 dark:border-zinc-600 focus:dark:border-zinc-400'
+        className='rounded border border-zinc-400 p-2 outline-0 focus:border-zinc-600 dark:border-zinc-600 focus:dark:border-zinc-400'
       />
       {errors.message && <p>{`${errors.message.message}`}</p>}
       <button
