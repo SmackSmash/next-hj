@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang='en' suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Providers>
-          <div className='bg-zinc-50 dark:bg-zinc-950'>
+          <div className='bg-zinc-50 transition-all duration-500 ease-in-out dark:bg-zinc-950'>
             <div className='container mx-auto flex min-h-screen flex-col p-10 font-sans'>
               <NavBar />
               {children}
