@@ -45,7 +45,6 @@ import Image41 from '@/../public/lifestyle/41.webp';
 import Image42 from '@/../public/lifestyle/42.webp';
 import Image43 from '@/../public/lifestyle/43.webp';
 import Image44 from '@/../public/lifestyle/44.webp';
-import Image45 from '@/../public/lifestyle/45.webp';
 import Image46 from '@/../public/lifestyle/46.webp';
 import Image47 from '@/../public/lifestyle/47.webp';
 import Image48 from '@/../public/lifestyle/48.webp';
@@ -98,7 +97,6 @@ const images = [
   Image42,
   Image43,
   Image44,
-  Image45,
   Image46,
   Image47,
   Image48,
@@ -167,7 +165,6 @@ export default function TravelPage() {
         <GalleryImage src={Image42} alt='Image 42' images={images} />
         <GalleryImage src={Image43} alt='Image 43' images={images} />
         <GalleryImage src={Image44} alt='Image 44' images={images} />
-        <GalleryImage src={Image45} alt='Image 45' images={images} />
         <GalleryImage src={Image46} alt='Image 46' images={images} />
         <GalleryImage src={Image47} alt='Image 47' images={images} />
         <GalleryImage src={Image48} alt='Image 48' images={images} />
