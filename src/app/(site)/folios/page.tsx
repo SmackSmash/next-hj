@@ -15,19 +15,24 @@ export default function FoliosPage() {
         <Link href='/folios/food' className='text-2xl font-light'>
           Food
         </Link>
+      </div>
+      <div className='flex flex-col items-center justify-center gap-5 md:flex-grow'>
         <Link href='/folios/travel' className='text-2xl font-light'>
           Travel
         </Link>
-      </div>
-      <div className='flex flex-col items-center justify-center gap-5 md:flex-grow'>
         <Link href='/folios/lifestyle' className='text-2xl font-light'>
           Lifestyle
         </Link>
         <Link href='/folios/advertising' className='text-2xl font-light'>
           Advertising
         </Link>
+      </div>
+      <div className='flex flex-col items-center justify-center gap-5 md:flex-grow'>
         <Link href='/folios/social' className='text-2xl font-light'>
           Social
+        </Link>
+        <Link href='/folios/weddings' className='text-2xl font-light'>
+          Weddings
         </Link>
       </div>
     </div>
