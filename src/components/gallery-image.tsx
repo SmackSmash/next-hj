@@ -36,7 +36,7 @@ export default function GalleryImage({ src, alt, images }: GalleryImageProps) {
             quality={80}
             loading='lazy'
             onLoad={() => setIsLoaded(true)}
-            sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw'
+            sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, (max-width: 6000px) 30vw'
           />
         </div>
       </Dialog.Trigger>
