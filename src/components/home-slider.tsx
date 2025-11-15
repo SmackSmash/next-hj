@@ -12,6 +12,7 @@ import Image04 from '@/../public/home/4.webp';
 import Image05 from '@/../public/home/5.webp';
 import Image06 from '@/../public/home/6.webp';
 import Image07 from '@/../public/home/7.webp';
+import Image08 from '@/../public/home/8.webp';
 
 export default function HomeSlider() {
   return (
@@ -48,6 +49,9 @@ export default function HomeSlider() {
       </SwiperSlide>
       <SwiperSlide>
         <Image src={Image07} alt='Chair lift' fill style={{ objectFit: 'cover' }} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Image src={Image08} alt='Bride in doorway' fill style={{ objectFit: 'cover' }} />
       </SwiperSlide>
     </Swiper>
   );
