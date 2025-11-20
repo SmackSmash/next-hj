@@ -17,6 +17,8 @@ import Image13 from '@/../public/advertising/13.webp';
 import Image14 from '@/../public/advertising/14.webp';
 import Image15 from '@/../public/advertising/15.webp';
 import Image16 from '@/../public/advertising/16.webp';
+import Image17 from '@/../public/advertising/17.webp';
+import Image18 from '@/../public/advertising/18.webp';
 
 const images = [
   Image01,
@@ -34,7 +36,9 @@ const images = [
   Image13,
   Image14,
   Image15,
-  Image16
+  Image16,
+  Image17,
+  Image18
 ];
 
 export const metadata: Metadata = {
@@ -59,9 +63,9 @@ export default function TravelPage() {
         <GalleryImage src={Image06} alt='Image 6' images={images} />
         <GalleryImage src={Image07} alt='Image 7' images={images} />
         <GalleryImage src={Image08} alt='Image 8' images={images} />
+        <GalleryImage src={Image09} alt='Image 9' images={images} />
       </div>
       <div className='flex flex-col items-center gap-5'>
-        <GalleryImage src={Image09} alt='Image 9' images={images} />
         <GalleryImage src={Image10} alt='Image 10' images={images} />
         <GalleryImage src={Image11} alt='Image 11' images={images} />
         <GalleryImage src={Image12} alt='Image 12' images={images} />
@@ -69,6 +73,8 @@ export default function TravelPage() {
         <GalleryImage src={Image14} alt='Image 14' images={images} />
         <GalleryImage src={Image15} alt='Image 15' images={images} />
         <GalleryImage src={Image16} alt='Image 16' images={images} />
+        <GalleryImage src={Image17} alt='Image 17' images={images} />
+        <GalleryImage src={Image18} alt='Image 18' images={images} />
       </div>
     </div>
   );

@@ -49,6 +49,7 @@ import Image45 from '@/../public/travel/45.webp';
 import Image46 from '@/../public/travel/46.webp';
 import Image47 from '@/../public/travel/47.webp';
 import Image48 from '@/../public/travel/48.webp';
+import Image49 from '@/../public/travel/49.webp';
 
 const images = [
   Image01,
@@ -98,7 +99,8 @@ const images = [
   Image45,
   Image46,
   Image47,
-  Image48
+  Image48,
+  Image49
 ];
 
 export const metadata: Metadata = {
@@ -165,6 +167,7 @@ export default function TravelPage() {
         <GalleryImage src={Image46} alt='Image 46' images={images} />
         <GalleryImage src={Image47} alt='Image 47' images={images} />
         <GalleryImage src={Image48} alt='Image 48' images={images} />
+        <GalleryImage src={Image49} alt='Image 49' images={images} />
       </div>
     </div>
   );
