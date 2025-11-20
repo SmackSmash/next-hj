@@ -159,7 +159,6 @@ export default function TravelPage() {
       </div>
       <div className='flex flex-col items-center gap-5'>
         <GalleryImage src={Image28} alt='Image 28' images={images} />
-        <GalleryImage src={Image29} alt='Image 29' images={images} />
         <GalleryImage src={Image30} alt='Image 30' images={images} />
         <GalleryImage src={Image31} alt='Image 31' images={images} />
         <GalleryImage src={Image32} alt='Image 32' images={images} />
@@ -174,6 +173,7 @@ export default function TravelPage() {
         <GalleryImage src={Image41} alt='Image 41' images={images} />
         <GalleryImage src={Image42} alt='Image 42' images={images} />
         <GalleryImage src={Image43} alt='Image 43' images={images} />
+        <GalleryImage src={Image29} alt='Image 29' images={images} />
         <GalleryImage src={Image44} alt='Image 44' images={images} />
         <GalleryImage src={Image45} alt='Image 45' images={images} />
         <GalleryImage src={Image46} alt='Image 46' images={images} />
